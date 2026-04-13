@@ -100,7 +100,7 @@ function CohortCard({
                 onClick={() => setLightboxOpen(true)}
                 className="w-full py-2 text-sm font-semibold border-2 rounded transition-colors"
                 style={{ borderColor: "#4E49E0", color: "#4E49E0" }}
-                whileHover={{ scale: 1.02, backgroundColor: "rgba(0,135,81,0.06)" }}
+                whileHover={{ scale: 1.02, backgroundColor: "rgba(78,73,224,0.06)" }}
                 transition={{ type: "spring", stiffness: 100 }}
                 aria-label={`View full gallery for Cohort ${cohort.number}`}
               >
