@@ -29,7 +29,8 @@ export default function Header() {
         className="fixed top-0 left-0 z-[100] h-1 transition-all duration-150"
         style={{
           width: `${scrollProgress}%`,
-          backgroundColor: "#008751",
+          background:
+            "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
         }}
         role="progressbar"
         aria-label="Page scroll progress"
@@ -42,7 +43,10 @@ export default function Header() {
         {/* Top bar */}
         <div
           className="w-full text-white text-xs py-2 px-4"
-          style={{ backgroundColor: "#008751" }}
+          style={{
+            background:
+              "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+          }}
         >
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             <span className="font-medium tracking-wide">
@@ -84,7 +88,10 @@ export default function Header() {
             <div className="flex items-center gap-3">
               <div
                 className="w-10 h-10 rounded-full flex items-center justify-center text-white font-bold text-sm"
-                style={{ backgroundColor: "#008751" }}
+                style={{
+                  background:
+                    "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                }}
                 aria-hidden="true"
               >
                 N
@@ -92,7 +99,13 @@ export default function Header() {
               <div>
                 <div
                   className="font-bold text-lg leading-tight"
-                  style={{ color: "#008751" }}
+                  style={{
+                    background:
+                      "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
                 >
                   NIGCOMSAT
                 </div>
@@ -108,7 +121,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/history"
-                    className="hover:text-[#008751] transition-colors"
+                    className="hover:text-[#4E49E0] transition-colors"
                     style={{ color: "#1a1a1a" }}
                   >
                     History
@@ -117,7 +130,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/history#chronicles"
-                    className="hover:text-[#008751] transition-colors"
+                    className="hover:text-[#4E49E0] transition-colors"
                     style={{ color: "#1a1a1a" }}
                   >
                     Cohorts
@@ -126,7 +139,7 @@ export default function Header() {
                 <li>
                   <Link
                     href="/history#alumni"
-                    className="hover:text-[#008751] transition-colors"
+                    className="hover:text-[#4E49E0] transition-colors"
                     style={{ color: "#1a1a1a" }}
                   >
                     Alumni
@@ -145,8 +158,8 @@ export default function Header() {
                   href="https://nigcomsat.gov.ng/accelerator"
                   className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold rounded border-2 transition-colors duration-200"
                   style={{
-                    borderColor: "#008751",
-                    color: "#008751",
+                    borderColor: "#4E49E0",
+                    color: "#4E49E0",
                     backgroundColor: "transparent",
                   }}
                   aria-label="Back to NIGCOMSAT Accelerator Home"
@@ -162,8 +175,8 @@ export default function Header() {
                   href="/history"
                   className="hidden sm:inline-flex items-center px-4 py-2 text-sm font-semibold rounded border-2 transition-colors duration-200"
                   style={{
-                    borderColor: "#008751",
-                    color: "#008751",
+                    borderColor: "#4E49E0",
+                    color: "#4E49E0",
                     backgroundColor: "transparent",
                   }}
                   aria-label="Portal Home"
