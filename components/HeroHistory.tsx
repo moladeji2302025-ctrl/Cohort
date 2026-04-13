@@ -8,20 +8,20 @@ export default function HeroHistory() {
       className="relative w-full min-h-[560px] flex items-center justify-center overflow-hidden"
       aria-label="Hero section — NIGCOMSAT Accelerator History"
     >
-      {/* Background with darkened satellite dish style */}
+      {/* Brand gradient hero background */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(135deg, #0a2e1a 0%, #1a3a2a 50%, #0a2e1a 100%)",
+            "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
         }}
         aria-hidden="true"
       />
 
-      {/* Green overlay */}
+      {/* Subtle dark overlay for text legibility */}
       <div
         className="absolute inset-0"
-        style={{ backgroundColor: "rgba(0, 135, 81, 0.20)" }}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.10)" }}
         aria-hidden="true"
       />
 
@@ -37,7 +37,7 @@ export default function HeroHistory() {
             cy="280"
             r="200"
             fill="none"
-            stroke="#008751"
+            stroke="#4E49E0"
             strokeWidth="2"
           />
           <circle
@@ -45,7 +45,7 @@ export default function HeroHistory() {
             cy="280"
             r="150"
             fill="none"
-            stroke="#008751"
+            stroke="#4E49E0"
             strokeWidth="1"
           />
           <circle
@@ -53,13 +53,13 @@ export default function HeroHistory() {
             cy="280"
             r="100"
             fill="none"
-            stroke="#008751"
+            stroke="#4E49E0"
             strokeWidth="1"
           />
-          <line x1="400" y1="80" x2="400" y2="480" stroke="#008751" strokeWidth="1" />
-          <line x1="200" y1="280" x2="600" y2="280" stroke="#008751" strokeWidth="1" />
-          <line x1="259" y1="139" x2="541" y2="421" stroke="#008751" strokeWidth="0.5" />
-          <line x1="541" y1="139" x2="259" y2="421" stroke="#008751" strokeWidth="0.5" />
+          <line x1="400" y1="80" x2="400" y2="480" stroke="#4E49E0" strokeWidth="1" />
+          <line x1="200" y1="280" x2="600" y2="280" stroke="#4E49E0" strokeWidth="1" />
+          <line x1="259" y1="139" x2="541" y2="421" stroke="#4E49E0" strokeWidth="0.5" />
+          <line x1="541" y1="139" x2="259" y2="421" stroke="#4E49E0" strokeWidth="0.5" />
         </svg>
       </div>
 
@@ -73,17 +73,16 @@ export default function HeroHistory() {
           <span
             className="inline-block text-xs uppercase tracking-widest font-semibold mb-4 px-3 py-1 rounded"
             style={{
-              color: "#008751",
-              backgroundColor: "rgba(0, 135, 81, 0.15)",
-              border: "1px solid rgba(0, 135, 81, 0.3)",
+              color: "#ffffff",
+              backgroundColor: "rgba(255, 255, 255, 0.15)",
+              border: "1px solid rgba(255, 255, 255, 0.3)",
             }}
           >
             Official Archive
           </span>
 
           <h1
-            className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"
-            style={{ color: "#008751" }}
+            className="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-white"
           >
             The Legacy of Innovation
           </h1>
@@ -96,9 +95,12 @@ export default function HeroHistory() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
             <motion.a
               href="#chronicles"
-              className="inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded text-sm transition-colors"
-              style={{ backgroundColor: "#008751" }}
-              whileHover={{ scale: 1.03 }}
+              className="inline-flex items-center justify-center px-6 py-3 text-white font-semibold rounded text-sm transition-filter"
+              style={{
+                background:
+                  "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+              }}
+              whileHover={{ scale: 1.03, filter: "brightness(1.1)" }}
               transition={{ type: "spring", stiffness: 100 }}
               aria-label="Explore cohort chronicles"
             >
@@ -108,8 +110,8 @@ export default function HeroHistory() {
               href="#alumni"
               className="inline-flex items-center justify-center px-6 py-3 font-semibold rounded text-sm border-2 transition-colors"
               style={{
-                borderColor: "#008751",
-                color: "#008751",
+                borderColor: "#4E49E0",
+                color: "#ffffff",
                 backgroundColor: "rgba(255,255,255,0.08)",
               }}
               whileHover={{ scale: 1.03 }}
@@ -136,7 +138,13 @@ export default function HeroHistory() {
             <div key={stat.label} className="text-center">
               <div
                 className="text-3xl font-extrabold"
-                style={{ color: "#008751" }}
+                style={{
+                  background:
+                    "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
               >
                 {stat.value}
               </div>

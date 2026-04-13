@@ -53,7 +53,13 @@ export default function Footer() {
             <div key={col.heading}>
               <h3
                 className="text-sm font-bold uppercase tracking-widest mb-4"
-                style={{ color: "#008751" }}
+                style={{
+                  background:
+                    "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                }}
               >
                 {col.heading}
               </h3>
@@ -84,7 +90,10 @@ export default function Footer() {
           {/* Nigerian Coat of Arms placeholder */}
           <div
             className="w-10 h-10 rounded-full flex items-center justify-center text-white text-xs font-bold border border-white/20"
-            style={{ backgroundColor: "#008751" }}
+            style={{
+              background:
+                "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+            }}
             title="Nigerian Coat of Arms"
             aria-label="Nigerian Coat of Arms — placeholder"
           >

@@ -95,7 +95,7 @@ const ALUMNI: AlumniStartup[] = [
     cohort: "1.0",
     shortBio: "Ground station monitoring and satellite tracking software.",
     logoInitials: "ST",
-    logoColor: "#008751",
+    logoColor: "#4E49E0",
   },
   {
     id: "deepsoil",
@@ -167,7 +167,7 @@ function StartupCard({ startup }: { startup: AlumniStartup }) {
         {hovered && (
           <motion.div
             className="absolute inset-0 flex flex-col items-center justify-center p-3 text-center text-white"
-            style={{ backgroundColor: "rgba(0,135,81,0.95)" }}
+            style={{ backgroundColor: "rgba(78, 73, 224, 0.95)" }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -212,7 +212,13 @@ export default function AlumniBento() {
         >
           <h2
             className="text-3xl md:text-4xl font-extrabold mb-4"
-            style={{ color: "#008751" }}
+            style={{
+              background:
+                "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
           >
             Alumni &amp; Startup Directory
           </h2>
@@ -236,8 +242,9 @@ export default function AlumniBento() {
               style={
                 activeSector === sector
                   ? {
-                      backgroundColor: "#008751",
-                      borderColor: "#008751",
+                      background:
+                        "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                      borderColor: "#4E49E0",
                       color: "#ffffff",
                     }
                   : {

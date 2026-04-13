@@ -63,7 +63,10 @@ export default function Lightbox({
             {/* Header */}
             <div
               className="flex items-center justify-between px-6 py-4"
-              style={{ backgroundColor: "#008751" }}
+            style={{
+              background:
+                "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+            }}
             >
               <h2 className="text-white font-bold text-lg">
                 Cohort {cohortNumber} — Photo Gallery

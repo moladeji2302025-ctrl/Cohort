@@ -33,7 +33,10 @@ function CohortCard({
         {/* Cohort header stripe */}
         <div
           className="px-6 py-4 flex items-center justify-between"
-          style={{ backgroundColor: "#008751" }}
+          style={{
+            background:
+              "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+          }}
         >
           <div>
             <span className="text-white text-xs font-semibold uppercase tracking-widest opacity-80">
@@ -47,7 +50,7 @@ function CohortCard({
             <span
               className={`px-3 py-1 rounded text-xs font-bold uppercase tracking-wide ${
                 cohort.status === "Active"
-                  ? "bg-white text-[#008751]"
+                  ? "bg-white text-[#4E49E0]"
                   : "bg-white/20 text-white"
               }`}
             >
@@ -96,8 +99,8 @@ function CohortCard({
               <motion.button
                 onClick={() => setLightboxOpen(true)}
                 className="w-full py-2 text-sm font-semibold border-2 rounded transition-colors"
-                style={{ borderColor: "#008751", color: "#008751" }}
-                whileHover={{ scale: 1.02, backgroundColor: "rgba(0,135,81,0.06)" }}
+                style={{ borderColor: "#4E49E0", color: "#4E49E0" }}
+                whileHover={{ scale: 1.02, backgroundColor: "rgba(78,73,224,0.06)" }}
                 transition={{ type: "spring", stiffness: 100 }}
                 aria-label={`View full gallery for Cohort ${cohort.number}`}
               >
@@ -117,7 +120,7 @@ function CohortCard({
               <div className="flex items-center gap-2 mb-4">
                 <div
                   className="h-0.5 w-8"
-                  style={{ backgroundColor: "#008751" }}
+                  style={{ backgroundColor: "#4E49E0" }}
                 />
                 <span className="text-xs uppercase tracking-widest text-gray-400 font-semibold">
                   {cohort.launchDate}
@@ -134,7 +137,10 @@ function CohortCard({
                   <li key={i} className="flex items-start gap-2 text-sm text-gray-600">
                     <span
                       className="mt-1 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center text-white text-xs"
-                      style={{ backgroundColor: "#008751" }}
+                      style={{
+                        background:
+                          "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                      }}
                       aria-hidden="true"
                     >
                       ✓
@@ -173,7 +179,13 @@ function CohortCard({
               <div className="text-center">
                 <div
                   className="text-xl font-extrabold"
-                  style={{ color: "#008751" }}
+                  style={{
+                    background:
+                      "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
                 >
                   {cohort.startups ?? "—"}
                 </div>
@@ -188,7 +200,13 @@ function CohortCard({
               <div className="text-center">
                 <div
                   className="text-xl font-extrabold"
-                  style={{ color: "#008751" }}
+                  style={{
+                    background:
+                      "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
                 >
                   {cohort.mentors ?? "—"}
                 </div>
@@ -203,7 +221,13 @@ function CohortCard({
               <div className="text-center">
                 <div
                   className="text-xl font-extrabold"
-                  style={{ color: "#008751" }}
+                  style={{
+                    background:
+                      "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                  }}
                 >
                   {cohort.successRate ?? "—"}
                 </div>
@@ -245,7 +269,13 @@ export default function ChronicleList({ cohorts }: ChronicleListProps) {
         >
           <h2
             className="text-3xl md:text-4xl font-extrabold mb-4"
-            style={{ color: "#008751" }}
+            style={{
+              background:
+                "linear-gradient(to right, #0082E6, #2B6BE2, #4E49E0, #6339D9, #7B28CF)",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              backgroundClip: "text",
+            }}
           >
             Cohort Chronicles
           </h2>
